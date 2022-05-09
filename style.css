@@ -7,16 +7,36 @@
   scroll-behavior: smooth;
   scroll-snap-type: y;
   scroll-margin-left: 20vw;
-  text-decoration: none;
+  list-style-type: none;
 }
-a:link { /* unvisited link */ color: var(--text); text-decoration: none; border: none; }
-a:visited { /* visited link */ color: var(--text); }
-a:hover { /* mouse over link */ color: var(--text); border: none; }
-a:active { /* active link */ color: var(--text); }
+
+main {
+  margin-left: 20vw;
+}
+
+a:link {
+  /* unvisited link */
+  color: var(--text);
+  text-decoration: none;
+  border: none;
+}
+a:visited {
+  /* visited link */
+  color: var(--text);
+}
+a:hover {
+  /* mouse over link */
+  color: var(--text);
+  border: none;
+}
+a:active {
+  /* active link */
+  color: var(--text);
+}
 :root {
   --primary: #000000;
   --secondary: #661091;
-  --accent: #fcb708;
+  --accent: #fc9608;
   --dark: #350062;
   --light: #9845c2;
   --slight: #9845c295;
@@ -45,7 +65,7 @@ a:active { /* active link */ color: var(--text); }
   width: 20vw;
   background-color: var(--secondary);
 }
-.sec{
+.sec {
   background-color: var(--slight);
 }
 #container > div:not(:first-child) {
@@ -53,6 +73,8 @@ a:active { /* active link */ color: var(--text); }
   width: 40%;
   height: 200%;
 }
-#cf{
+#cf {
   background-color: var(--slight);
 }
+
+
