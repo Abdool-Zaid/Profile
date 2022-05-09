@@ -5,39 +5,54 @@
   box-sizing: border-box;
   font-family: "Fira Sans Condensed", sans-serif;
   scroll-behavior: smooth;
-  scroll-snap-type: proximity;
+  scroll-snap-type: y;
+  scroll-margin-left: 20vw;
+  text-decoration: none;
 }
+a:link { /* unvisited link */ color: var(--text); text-decoration: none; border: none; }
+a:visited { /* visited link */ color: var(--text); }
+a:hover { /* mouse over link */ color: var(--text); border: none; }
+a:active { /* active link */ color: var(--text); }
 :root {
-    --primary: #000000 ;
-    --secondary: #661091 ;
-    --accent: #FCB708;
-    --dark: #350062;
-    --light: #9845c2;
-    --text: #d5d5d5;
-
-  }
+  --primary: #000000;
+  --secondary: #661091;
+  --accent: #fcb708;
+  --dark: #350062;
+  --light: #9845c2;
+  --slight: #9845c295;
+  --text: #d5d5d5;
+}
 ::-webkit-scrollbar {
   display: none;
 }
 #container {
   height: 100vh;
-  background-color:var(--primary);
-  color:var(--text);
+  background-color: var(--primary);
+  color: var(--text);
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
   overflow: hidden;
   width: 220vw;
+  scroll-margin-left: 20vw;
 }
-:first-child {
-   /* position: fixed; */
-   
-    width: 20vw;
-background-color: var(--secondary);
-
+#container > #nav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  background-color: var(--secondary);
+}
+.sec{
+  background-color: var(--slight);
 }
 #container > div:not(:first-child) {
   overflow-y: scroll;
   width: 40%;
   height: 200%;
+}
+#cf{
+  background-color: var(--slight);
 }
