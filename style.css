@@ -68,6 +68,15 @@ a:active {
 .sec {
   background-color: var(--slight);
 }
+/* .card{
+
+} */
+.card-img-top{
+  width: 100%;
+  height: 40%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
 #container > div:not(:first-child) {
   overflow-y: scroll;
   width: 40%;
@@ -75,6 +84,6 @@ a:active {
 }
 #cf {
   background-color: var(--slight);
+   color:var(--text);
 }
-
 
