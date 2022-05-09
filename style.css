@@ -3,5 +3,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Fira Sans Condensed", sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
 }
+:root {
+    --primary: #000000 ;
+    --secondary: #661091 ;
+    --accent: #FCB708;
+    --dark: #350062;
+    --light: #9845c2;
+    --text: #d5d5d5;
 
+  }
+::-webkit-scrollbar {
+  display: none;
+}
+#container {
+  height: 100vh;
+  background-color:var(--primary);
+  color:var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  overflow: hidden;
+  width: 220vw;
+}
+:first-child {
+   /* position: fixed; */
+   
+    width: 20vw;
+background-color: var(--secondary);
+
+}
+#container > div:not(:first-child) {
+  overflow-y: scroll;
+  width: 40%;
+  height: 200%;
+}
