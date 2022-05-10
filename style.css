@@ -10,7 +10,7 @@
 }
 
 main {
-  margin-left: 20vw;
+  margin-left: 10vw;
 }
 
 a:link {
@@ -51,7 +51,7 @@ a:active {
   color: var(--text);
   display: flex;
   justify-content: space-between;
-  align-content: flex-end;
+  align-items: stretch;
   overflow: hidden;
   width: 220vw;
   scroll-snap-type: y proximity;
@@ -62,20 +62,25 @@ a:active {
   z-index: 1;
   top: 0;
   left: 0;
-  width: 20vw;
+  width: 10vw;
   background-color: var(--secondary);
 }
 #container > div:not(:first-child) {
-  overflow-y: scroll;
-  width: 100vh;
   height: 200vh;
+  width: 100vh;
   padding-left: 0.3%;
   margin-left: 1%;
+  overflow-y: scroll;
 }
 .sec {
   background-color: var(--secondary);
 }
 /* Testimonials */
+#tst{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
 .mlem >img {
   width: 10vw;
   height: 10vw;
@@ -103,7 +108,7 @@ background-color: var(--text);
   overflow-y: scroll;
   overflow-x: scroll;
 }
- .cimg h2 {
+ .btn btn-warning rounded-pill btn-lg >h5 {
     z-index: 10;
     color: #fc9608;
     font-size: large;
@@ -115,7 +120,13 @@ background-color: var(--text);
 .bn{
   color: var(--textd);
 }
+
+/* contact */
 #cf {
   background-color: var(--slight);
    color:var(--textd);
+}
+owl-carousel{
+  height: 20vh;
+  overflow: hidden;
 }
