@@ -40,7 +40,7 @@ a:active {
   --light: #9845c2;
   --slight: #9845c295;
   --text: #cebad3;
-  --textd:#101010;
+  --textd: #101010;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -76,57 +76,57 @@ a:active {
   background-color: var(--secondary);
 }
 /* Testimonials */
-#tst{
-display: flex;
-flex-direction: column;
-justify-content: center;
+#tst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.mlem >img {
+.mlem > img {
   width: 10vw;
   height: 10vw;
   border-radius: 50%;
   overflow: hidden;
-
 }
 
 #v-pills-tab {
   background-color: var(--slight);
-
 }
-
 
 /* project styles */
-.card{
-display: flex;
-flex-direction: column;
-justify-content: center;
-background-color: var(--text);
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--text);
 }
-.cimg{
+.cimg {
   width: 100%;
   height: 40%;
   overflow-y: scroll;
   overflow-x: scroll;
 }
- .btn btn-warning rounded-pill btn-lg >h5 {
-    z-index: 10;
-    color: #fc9608;
-    font-size: large;
-    
-  }
-.card-text{
+.btn btn-warning rounded-pill btn-lg > h5 {
+  z-index: 10;
+  color: #fc9608;
+  font-size: large;
+}
+.card-text {
   color: var(--textd);
 }
-.bn{
+.bn {
   color: var(--textd);
 }
 
 /* contact */
 #cf {
   background-color: var(--slight);
-   color:var(--textd);
+  color: var(--textd);
 }
-owl-carousel{
+.first {
   height: 20vh;
   overflow: hidden;
+}
+#map {
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
