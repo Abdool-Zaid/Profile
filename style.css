@@ -125,6 +125,12 @@ a:active {
 .first {
   height: 20vh;
   overflow: hidden;
+background-color: var(--dark);
+color: var(--accent);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
 }
 #map {
   overflow-y: scroll;
