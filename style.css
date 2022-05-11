@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 1rem;
   scroll-behavior: smooth;
   scroll-snap-type: y;
   list-style-type: none;
@@ -77,8 +78,17 @@ a:active {
   background-color: var(--secondary);
 }
 /* about */
+#abt{
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
 #vid{
   width:85vh;
+}
+/* work experience */
+.card-title{
+  color: var(--textd);
 }
 
 /* Testimonials */
