@@ -55,6 +55,8 @@
             <li><a href="#footer">credits</a></li>
           </ul>
         </div>
+
+        <!-- <div id="dummy"></div> -->
         <div>
           <div id="land"></div>
         </div>
@@ -870,8 +872,8 @@
                 </form>
               </div>
               <div class="container-fluid">
-                <!-- YOU NEED THIS CLASS HERE -->
-                <div class="owl-carousel">
+                <!-- carousel -->
+                <div class="owl-carousel row">
                   <div class="p-3">
                     <div class="first p-3">
                       <h4>Email</h4>
@@ -1395,6 +1397,14 @@
           autoplay: true,
           items: 4,
           loop: true,
+          responsive: {
+            992: {
+              items: 3,
+            },
+            1020: {
+              items: 4,
+            },
+          },
         });
       });
     </script>

@@ -16,7 +16,12 @@ main {
   height: 100vh;
   width: 100vw;
 }
-
+#dummy{
+  display: none;
+  width: 10%;
+  height: 200vh;
+  background-color: var(--accent);
+}
 a:link {
   /* unvisited link */
   color: var(--text);
@@ -149,11 +154,7 @@ background-color: var(--tdark);
   overflow-y: scroll;
   overflow-x: scroll;
 }
-.btn btn-warning rounded-pill btn-lg > h5 {
-  z-index: 10;
-  color: #fc9608;
-  font-size: large;
-}
+
 .card-text {
   color: var(--textd);
 }
@@ -180,48 +181,6 @@ justify-content: space-between;
   overflow-y: scroll;
   overflow-x: scroll;
 }
-@keyframes y{
-  0%{
-    transform: translateY(0px);
-  }
-  49%{
-      transform: translateY(0ch);
-  }
-  50%{
-    transform:translatey(-2ch);
-  }
-  51%{
-    transform:translatey(-2ch);
-  }
-  100%{
-    transform: translateY(-2ch);
-  }
-}
-@keyframes x{
-  0%{
-    transform: translatex(0ch);
-  }
-  25%{
-    transform: translatex(16ch);
-  }
-  50%{
-    transform: translatex(16ch);
-}
-  
-  75%{
-    transform: translatex(0ch);
-    
-  }
-  
-  100%{
-    transform:translatex(0ch);
-  }
-}
-#temp{
-background-color:grey;
-height:50vw;
-position:absolute;
-}
 
 @media only screen and (max-width: 1510px){
   main{
@@ -238,10 +197,21 @@ position:absolute;
 #container{
   flex-direction: column;
   width:100vw;
-  height: fit-content;
+  height: max-content;
 }
 
 #container > div:not(:first-child) {
   height: fit-content;
 }
+}
+@media only screen and (max-width: 366px){
+.first{
+  font-size: 0.9rem;
+}
+
+}
+@media only screen and (max-width: 366px){
+  *{
+    font-size: 0.9rem;
+  }
 }
