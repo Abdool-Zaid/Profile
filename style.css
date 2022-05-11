@@ -88,8 +88,9 @@ a:active {
   overflow: hidden;
 }
 
-#v-pills-tab {
-  background-color: var(--slight);
+.nav-pills .nav-link.active {
+  background-color: var(--accent);
+  color: var(--text);
 }
 
 /* project styles */
