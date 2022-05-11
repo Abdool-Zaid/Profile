@@ -85,6 +85,9 @@ a:active {
   overflow: hidden;
 
 }
+#land{
+  background-image: url(https://picsum.photos/1800/900);
+}
 /* about */
 #abt{
 display:flex;
