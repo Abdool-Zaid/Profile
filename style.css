@@ -82,6 +82,8 @@ a:active {
 }
 .sec {
   background-color: var(--secondary);
+  overflow: hidden;
+
 }
 /* about */
 #abt{
@@ -98,11 +100,7 @@ justify-content: space-evenly;
 }
 
 /* Testimonials */
-#tst {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .mlem > img {
   width: 10vw;
   height: 10vw;
