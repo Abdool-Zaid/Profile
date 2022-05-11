@@ -41,6 +41,7 @@ a:active {
   --slight: #9845c295;
   --text: #cebad3;
   --textd: #101010;
+  --tdark: #35006230;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -75,6 +76,11 @@ a:active {
 .sec {
   background-color: var(--secondary);
 }
+/* about */
+#vid{
+  width:85vh;
+}
+
 /* Testimonials */
 #tst {
   display: flex;
@@ -87,10 +93,12 @@ a:active {
   border-radius: 50%;
   overflow: hidden;
 }
-
+.nav-pills {
+  
+  border-right: 5px double var(--accent);
+}
 .nav-pills .nav-link.active {
-  background-color: var(--accent);
-  color: var(--text);
+background-color: var(--tdark);
 }
 
 /* project styles */
