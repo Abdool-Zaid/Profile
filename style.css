@@ -7,7 +7,7 @@
   font-size: 1rem;
   font-weight: bold;
   scroll-behavior: smooth;
-  scroll-snap-type: y;
+  
   list-style-type: none;
 }
 
@@ -78,7 +78,7 @@ h3{
   align-items: stretch;
   overflow: hidden;
   width: 220vw;
-  scroll-snap-type: y proximity;
+
 }
 #container > #nav {
   height: 100%;
