@@ -61,7 +61,7 @@ h1{
   top: 0;
   right: 0;
   margin:10px;
-  color: var(--accent);
+  color: var(--dark);
 }
 h1:focus + #container > #nav {
   display: block !important;
@@ -105,11 +105,21 @@ h3{
 
 }
 #land{
-  background-image: url(https://picsum.photos/1800/900);
-  width: 100vw;
-  height: 100%;
+  background-image: url(./assets/Abdool__Zaid-removebg-preview.png) ;
+  background-size: cover;
+  width: 100%;  
+  height: 900px;
+ font-size: 10%;
+ color: var(--accent);
+font-weight: bold;
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
-
+.feint{
+  color: var(--text);
+  font-weight: 100;
+}
 /* about */
 #abt{
 display:flex;
