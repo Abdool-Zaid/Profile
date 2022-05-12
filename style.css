@@ -78,7 +78,7 @@ h3{
   align-items: stretch;
   overflow: hidden;
   width: 220vw;
-
+  scroll-snap-align: start;
 }
 #container > #nav {
   height: 100%;
@@ -90,6 +90,7 @@ h3{
   background-color: var(--slight);
 }
 #container > div:not(:first-child) {
+
   height: 200vh;
   width: 100vw;
   padding-left: 0.3%;
