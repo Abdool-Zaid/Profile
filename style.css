@@ -68,6 +68,8 @@ h1:focus + #container > #nav {
 }
 h3{
   font-weight: bold;
+  border: 5px double var(--accent);
+width: fit-content;
 }
 #container {
   height: 100vh;
@@ -129,6 +131,8 @@ justify-content: space-evenly;
 }
 #vid{
   width:100%;
+  border: 5px double var(--accent);
+  border-radius: 2%;
 }
 /* work experience */
 .card-title{
@@ -172,7 +176,14 @@ background-color: var(--tdark);
 .bn {
   color: var(--textd);
 }
-
+.btn.btn-warning.rounded-pill.btn-lg{
+border: 5px double var(--accent);
+background-color: var(--tdark);
+}
+h5{
+  color: var(--textd);
+font-weight: bold;
+}
 /* contact */
 #cf {
   background-color: var(--slight);
