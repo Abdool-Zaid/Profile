@@ -80,7 +80,7 @@ width: fit-content;
   align-items: stretch;
   overflow: hidden;
   width: 220vw;
-  scroll-snap-align: start;
+  scroll-padding: 0px 500px 0px 0px;
 }
 #container > #nav {
   height: 100%;
@@ -138,6 +138,10 @@ justify-content: space-evenly;
 .card-title{
   color: var(--textd);
 }
+.card-body{
+  margin: 5%;
+
+}
 
 /* Testimonials */
 
@@ -153,6 +157,7 @@ justify-content: space-evenly;
 }
 .nav-pills .nav-link.active {
 background-color: var(--tdark);
+border: 5px double var(--accent);
 }
 
 /* project styles */
