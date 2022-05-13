@@ -25,11 +25,12 @@ main {
   height: 200vh;
   background-color: var(--accent);
 }
-a:link {
+a:link, a:link >* {
   /* unvisited link */
   color: var(--text);
   text-decoration: none;
   border: none;
+  transition: 400ms transform ease-in-out;
 }
 a:visited {
   /* visited link */
@@ -39,10 +40,12 @@ a:hover {
   /* mouse over link */
   color: var(--text);
   border: none;
+  transform: scale(1.2);
 }
 a:active {
   /* active link */
   color: var(--text);
+  
 }
 :root {
   --primary: #0d0014;
@@ -100,7 +103,9 @@ h3 {
   height: 200vh;
   width: 100vw;
   padding-left: 0.3%;
+  padding-right: 0.3%;
   margin-left: 1%;
+  margin-right: 1%;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -136,6 +141,7 @@ h3 {
   width: 100%;
   border: 5px double var(--accent);
   border-radius: 2%;
+  margin-right: 1%;
 }
 /* work experience */
 .card-title {
@@ -144,8 +150,16 @@ h3 {
 .card-body {
   margin: 5%;
 }
-.a.btn.btn-primary {
-  background-color: var(--tdark);
+#btn{
+  border: 5px double var(--accent);
+  color: var(--text);
+  font-weight: bold;
+
+}
+
+#cv > a > button {
+  border: 5px double var(--accent);
+  color: var(--text);
 }
 /* Testimonials */
 
@@ -157,6 +171,7 @@ h3 {
 }
 .nav-pills {
   border-right: 5px double var(--accent);
+
 }
 .nav-pills .nav-link.active {
   background-color: var(--tdark);
@@ -202,6 +217,10 @@ h5.card-title {
 #cf {
   background-color: var(--slight);
   color: var(--textd);
+}
+.form-label
+{
+  color: var(--accent);
 }
 .first {
   height: 20vh;
