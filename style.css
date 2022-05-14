@@ -79,19 +79,20 @@ h3 {
   padding: 1%;
 }
 #container {
-  height: 100vh;
   background-color: var(--primary);
   color: var(--text);
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  /* justify-content: space-between;
+  align-items: stretch; */
   /* overflow-x: auto;
   overscroll-behavior:auto; */
-  overflow-x: hidden;
   width: 220vw;
-  scroll-padding: 0px 500px 0px 0px;
+  height: 100vh;
+  overflow: hidden;
+  
+  
 }
-#container > #nav {
+#nav {
   height: 100%;
   position: fixed;
   z-index: 1;
