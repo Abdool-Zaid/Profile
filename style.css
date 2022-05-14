@@ -85,8 +85,9 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  overflow-x: auto;
-  overscroll-behavior:auto;
+  /* overflow-x: auto;
+  overscroll-behavior:auto; */
+  overflow-x: hidden;
   width: 220vw;
   scroll-padding: 0px 500px 0px 0px;
 }
@@ -98,6 +99,14 @@ h3 {
   left: 0;
   width: 10vw;
   background-color: var(--tdark);
+}
+/* offcanvas */
+#offcanvasExampleLabel{
+  background-color: var(--tdark);
+  color: var(--accent);
+}
+.offcanvas-start{
+  background-color: var(--secondary);
 }
 #container > div:not(:first-child) {
   height: 200vh;
@@ -156,10 +165,19 @@ h3 {
   font-weight: bold;
 
 }
+/* resume */
+#cv{
+  width: fit-content;
+}
 
 #cv > a > button {
   border: 5px double var(--accent);
   color: var(--text);
+  transition: 400ms transform ease-in-out;
+}
+#cv > a > button:hover{
+  transform: scale(1.2);
+  
 }
 /* Testimonials */
 
@@ -168,10 +186,15 @@ h3 {
   height: 10vw;
   border-radius: 50%;
   overflow: hidden;
+  transition: 400ms transform ease-in-out;
+}
+.mlem > img:hover{
+  
+  transform: scale(1.1);
 }
 .nav-pills {
   border-right: 5px double var(--accent);
-
+  
 }
 .nav-pills .nav-link.active {
   background-color: var(--tdark);
@@ -191,11 +214,16 @@ h3 {
 .cimg {
   width: 100%;
   height: 40%;
+  margin-top: 3%;
   overflow-y: scroll;
   overflow-x: scroll;
   border: 5px double var(--accent);
+  transition: 400ms transform ease-in-out;
 }
-
+.cimg:hover{
+  transform: scale(1.1);
+  
+}
 .card-text {
   color: var(--text);
 }
@@ -204,11 +232,25 @@ h3 {
 }
 .btn.btn-warning.rounded-pill.btn-lg {
   border: 5px double var(--accent);
+  border: 5px double var(--accent);
   background-color: var(--tdark);
 }
 h5 {
-  color: var(--textd);
+  color: var(--text);
   font-weight: bold;
+}
+
+.btn.btn-warning.rounded-pill.btn-lg{
+  transition: 400ms transform ease-in-out;
+  
+}
+.btn.btn-warning.rounded-pill.btn-lg:hover{
+  transform: scale(1.1);
+
+}
+h5:hover{
+  transform: scale(1.1);
+
 }
 h5.card-title {
   color: var(--accent);
@@ -236,7 +278,7 @@ h5.card-title {
   overflow-x: scroll;
 }
 
-@media only screen and (max-width: 1510px) {
+@media only screen and (max-width: 1050px) {
   main {
     margin: 0;
   }
@@ -258,11 +300,7 @@ h5.card-title {
     height: fit-content;
   }
 }
-@media only screen and (max-width: 366px) {
-  .first {
-    font-size: 0.9rem;
-  }
-}
+
 @media only screen and (max-width: 366px) {
   * {
     font-size: 0.9rem;
