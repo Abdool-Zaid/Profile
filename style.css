@@ -99,7 +99,7 @@ h3 {
   top: 0;
   left: 0;
   width: 10vw;
-  background-color: var(--tdark);
+  background-color: var(--primary);
 }
 /* offcanvas */
 #offcanvasExampleLabel{
