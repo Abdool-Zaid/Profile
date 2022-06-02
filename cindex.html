@@ -94,6 +94,9 @@ referrerpolicy="no-referrer"
       particlesJS.load("particular", "particles.json", function () {
         console.log("callback - particles.js config loaded");
       });
+      $('.owl-dot').click(function () {
+  owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+});
     </script>
 </body>
 </html>
