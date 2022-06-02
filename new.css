@@ -55,7 +55,7 @@ a:active {
   --text: #cebad3;
   --textd: #101010;
   --tdark: #35006230;
-  --time:onscroll;
+  --time:calc(30-15)s;
 }
 .wrapper{
   display: flex;
@@ -69,7 +69,7 @@ a:active {
   width: 30vw;
   height: 30vh;
   transform-style: preserve-3d;
-  animation: slid var(--time) linear infinite;
+  animation: slid 20S linear infinite;
 }
 .scope span {
   background-color: var(--secondary);
@@ -83,6 +83,7 @@ a:active {
     transform-style: preserve-3d;
     transform: rotatex(calc(var(--i) * 45deg)) translateZ(350px);
   }
+  
   .scope span img {
     position: absolute;
     top: 0;

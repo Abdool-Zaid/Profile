@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: bold;
+    scroll-behavior: smooth;
+    list-style-type: none;
+
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+a:link,
+a:link > * {
+  /* unvisited link */
+  color: var(--text);
+  text-decoration: none;
+  border: none;
+  transition: 400ms transform ease-in-out;
+}
+a:visited {
+  /* visited link */
+  color: var(--text);
+}
+a:hover {
+  /* mouse over link */
+  color: var(--text);
+  border: none;
+  transform: scale(1.2);
+}
+a:active {
+  /* active link */
+  color: var(--text);
+}
+:root{
+  --primary  : #0d0014;
+  --secondary: #661091;
+  --accent   : #ff9c10;
+  --dark     : #350062;
+  --light    : #9845c2;
+  --slight   : #9845c295;
+  --text     : #cebad3;
+  --textd    : #101010;
+  --tdark    : #35006230;
+  --navW     : 20vw;
+}
+body{
+    display: inline-block;
+    background-image: url(https://picsum.photos/200);
+    position: fixed;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.navbar{
+    width: var(--navW);
+    height: 100vh;
+    background-color: var(--tdark);
+    position: fixed;
+    left: 0;
+
+}
+#content{
+    width: 80vw;
+    height: 101%;
+}
+.owl-carousel{
+    width: 500vw !important;
+    position: fixed;
+}
+.seg{
+    width: 80%;
+    height: 300vh;
+    background-color: var(--light);
+    overflow: hidden;
+    overflow-y: scroll;
+}

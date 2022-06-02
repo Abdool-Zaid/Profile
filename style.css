@@ -4,14 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  scroll-behavior: smooth;
-
-  list-style-type: none;
+    font-size: 1rem;
+    font-weight: bold;
+    scroll-behavior: smooth;
+    list-style-type: none;
 }
-body{
-
+body {
   background-color: var(--primary);
 }
 main {
@@ -25,7 +23,8 @@ main {
   height: 200vh;
   background-color: var(--accent);
 }
-a:link, a:link >* {
+a:link,
+a:link > * {
   /* unvisited link */
   color: var(--text);
   text-decoration: none;
@@ -45,7 +44,6 @@ a:hover {
 a:active {
   /* active link */
   color: var(--text);
-  
 }
 :root {
   --primary: #0d0014;
@@ -82,15 +80,9 @@ h3 {
   background-color: var(--primary);
   color: var(--text);
   display: flex;
-  /* justify-content: space-between;
-  align-items: stretch; */
-  /* overflow-x: auto;
-  overscroll-behavior:auto; */
   width: 220vw;
   height: 100vh;
-  overflow: hidden;
-  
-  
+  overflow: auto;
 }
 #nav {
   height: 100%;
@@ -101,12 +93,16 @@ h3 {
   width: 10vw;
   background-color: var(--primary);
 }
+#abt {
+  /* scroll-snap-stop:always; */
+  scroll-margin: 5em 5em;
+}
 /* offcanvas */
-#offcanvasExampleLabel{
+#offcanvasExampleLabel {
   background-color: var(--tdark);
   color: var(--accent);
 }
-.offcanvas-start{
+.offcanvas-start {
   background-color: var(--secondary);
 }
 #container > div:not(:first-child) {
@@ -160,14 +156,13 @@ h3 {
 .card-body {
   margin: 5%;
 }
-#btn{
+#btn {
   border: 5px double var(--accent);
   color: var(--text);
   font-weight: bold;
-
 }
 /* resume */
-#cv{
+#cv {
   width: fit-content;
 }
 
@@ -176,9 +171,8 @@ h3 {
   color: var(--text);
   transition: 400ms transform ease-in-out;
 }
-#cv > a > button:hover{
+#cv > a > button:hover {
   transform: scale(1.2);
-  
 }
 /* Testimonials */
 
@@ -189,13 +183,11 @@ h3 {
   overflow: hidden;
   transition: 400ms transform ease-in-out;
 }
-.mlem > img:hover{
-  
+.mlem > img:hover {
   transform: scale(1.1);
 }
 .nav-pills {
   border-right: 5px double var(--accent);
-  
 }
 .nav-pills .nav-link.active {
   background-color: var(--tdark);
@@ -221,9 +213,8 @@ h3 {
   border: 5px double var(--accent);
   transition: 400ms transform ease-in-out;
 }
-.cimg:hover{
+.cimg:hover {
   transform: scale(1.1);
-  
 }
 .card-text {
   color: var(--text);
@@ -241,17 +232,14 @@ h5 {
   font-weight: bold;
 }
 
-.btn.btn-warning.rounded-pill.btn-lg{
+.btn.btn-warning.rounded-pill.btn-lg {
   transition: 400ms transform ease-in-out;
-  
 }
-.btn.btn-warning.rounded-pill.btn-lg:hover{
+.btn.btn-warning.rounded-pill.btn-lg:hover {
   transform: scale(1.1);
-
 }
-h5:hover{
+h5:hover {
   transform: scale(1.1);
-
 }
 h5.card-title {
   color: var(--accent);
@@ -261,8 +249,7 @@ h5.card-title {
   background-color: var(--slight);
   color: var(--textd);
 }
-.form-label
-{
+.form-label {
   color: var(--accent);
 }
 .first {
