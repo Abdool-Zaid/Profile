@@ -97,6 +97,14 @@ referrerpolicy="no-referrer"
       $('.owl-dot').click(function () {
   owl.trigger('to.owl.carousel', [$(this).index(), 300]);
 });
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
     </script>
 </body>
 </html>
